@@ -1,0 +1,24 @@
+project:
+  type: website
+  pre-render: "Rscript generate-player-pages.R"
+
+website:
+  title: "Bowling Stats"
+  navbar:
+    left:
+      - text: "Leaderboard"
+        href: index.qmd
+      - text: "Sessions"
+        href: sessions.qmd
+      - text: "Players"
+        menu:
+        - text: "Anatolii"
+          href: players/anatolii.qmd
+        - text: "Daniel"
+          href: players/daniel.qmd
+        - text: "Flora"
+          href: players/flora.qmd
+        - text: "Julia"
+          href: players/julia.qmd
+        - text: "Niko"
+          href: players/niko.qmd

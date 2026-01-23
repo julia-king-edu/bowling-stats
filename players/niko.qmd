@@ -1,0 +1,37 @@
+---
+title: "Niko"
+format: html
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+
+# Load dataset
+scores <- read_csv(file.path("..", "data", "scores.csv"))
+player_name <- "niko"
+player_scores <- scores %>% filter(player == player_name) %>% arrange(date)
+```
+
+```{r}
+#| echo: false
+tibble(
+    Total_Sessions = nrow(player_scores),
+    Average_Score = mean(player_scores$score),
+    Highest_Score = max(player_scores$score),
+    Lowest_Score = min(player_scores$score)
+  )
+```
+
+```{r}
+#| echo: false
+
+ggplot(player_scores, aes(x = date, y = score)) +
+    geom_line(group = 1, color = "steelblue") +
+    geom_point(color = "darkred", size = 2) +
+    labs(title = paste("Scores for", player_name),
+         x = "Date", y = "Score") +
+    theme_minimal()
+```
+
+
