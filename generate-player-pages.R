@@ -33,26 +33,27 @@ for(player_name in players) {
 navbar_yaml <- c(
   "project:",
   "  type: website",
+  "  output-dir: docs",
   "  pre-render: \"Rscript generate-player-pages.R\"",
+  "",
+  "format:", 
+  "  html:",
+  "    theme: cosmo",
   "",
   "website:",
   "  title: \"Bowling Stats\"",
   "  navbar:",
   "    left:",
   "      - text: \"Leaderboard\"",
-  "        href: index.qmd",
-  "      - text: \"Sessions\"",
-  "        href: sessions.qmd",
-  "      - text: \"Players\"",
-  "        menu:"
+  "        href: index.qmd"
 )
 
 # Add each player to the menu
 player_lines <- unlist(lapply(players, function(p) {
   fname <- sanitize_filename(p)
   c(
-    paste0("        - text: \"", tools::toTitleCase(p), "\""),
-    paste0("          href: players/", fname, ".qmd")
+    paste0("      - text: \"", tools::toTitleCase(p), "\""),
+    paste0("        href: players/", fname, ".qmd")
   )
 }))
 
