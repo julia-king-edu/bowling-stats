@@ -1,11 +1,15 @@
 ---
 title: "Julia"
 format: html
+include-in-header: 
+  - text: |
+      <style>figure { padding: 3em 0 3em 0; }</style
 ---
 
 ```{r setup}
 #| include: false
 library(tidyverse)
+library(DT)
 
 # Load dataset
 scores <- read_csv(file.path("..", "data", "scores.csv"))
@@ -13,25 +17,72 @@ player_name <- "julia"
 player_scores <- scores %>% filter(player == player_name) %>% arrange(date)
 ```
 
+
+## Stats Overview
+
 ```{r}
 #| echo: false
 tibble(
-    Total_Sessions = nrow(player_scores),
-    Average_Score = mean(player_scores$score),
-    Highest_Score = max(player_scores$score),
-    Lowest_Score = min(player_scores$score)
+  "Total Rounds Played" = nrow(player_scores),
+  "Highest Score" = max(player_scores$score),
+  "Lowest Score" = min(player_scores$score),
+  "Average Score" = mean(player_scores$score)
+) %>%
+  mutate(across(where(is.numeric), \(x) round(x, 1))) %>%
+  datatable(
+    rownames = FALSE,
+    options = list(
+      dom = "t",
+      paging = FALSE,
+      searching = FALSE,
+      info = FALSE,
+      lengthChange = FALSE
+    )
   )
 ```
+
+## Individual Results
 
 ```{r}
 #| echo: false
 
+daily_range <- player_scores %>%
+  group_by(date) %>%
+  summarise(
+    ymin = min(score),
+    ymax = max(score),
+    .groups = "drop"
+  )
+
 ggplot(player_scores, aes(x = date, y = score)) +
-    geom_line(group = 1, color = "steelblue") +
     geom_point(color = "darkred", size = 2) +
-    labs(title = paste("Scores for", player_name),
+  scale_x_date(breaks = daily_range$date, date_labels = "%Y-%m-%d") +
+    labs(title = paste("Individual Results per Day for", str_to_title(player_name)),
          x = "Date", y = "Score") +
     theme_minimal()
 ```
 
+
+## Progression of Daily Averages
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+daily_avg <- player_scores %>%
+  group_by(date) %>%
+  summarise(avg_score = mean(score), .groups = "drop")
+
+ggplot(daily_avg, aes(x = date, y = avg_score, group = 1)) +
+  geom_line(color = "steelblue", linewidth = 1.2) +
+  geom_point(color = "darkred", linewidth = 3) +
+  scale_x_date(breaks = daily_avg$date, date_labels = "%Y-%m-%d") +
+  labs(
+    title = paste("Progression of Daily Averages for", str_to_title(player_name)),
+    x = "Date",
+    y = "Average Score"
+  ) +
+  theme_minimal()
+```
 
