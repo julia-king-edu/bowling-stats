@@ -15,26 +15,32 @@ scores <- read_csv(file.path("data", "scores.csv"))
 ```{r}
 #| echo: false
 
-scores %>%
+leaderboard <- scores %>%
   group_by(player) %>%
   summarise(
     "Total Rounds Played" = n(),
+    "AverageScore" = mean(score),
     "Best Score" = max(score),
     "Worst Score" = min(score),
-    "AverageScore" = mean(score),
-    "% of games played under influence" = mean(drunk) * 100
+    "Score Standard Deviation" = sd(score),
+    "Strikes/ Game" = sum(strikes)/n()
   ) %>%
   arrange(desc(AverageScore)) %>%
   rename("Average Score" = AverageScore) %>%
   mutate(across(where(is.numeric), \(x) round(x, 1))) %>%
   mutate(player = str_to_title(player)) %>%
-  rename(Player = player) %>%
+  rename(Player = player)
+
+leaderboard %>%
   datatable(options = list(
     dom = "t",
     paging = FALSE,
     searching = FALSE,
     info = FALSE,
-    lengthChange = FALSE
-  ))
+    lengthChange = FALSE,
+    columnDefs = list(
+        list(orderSequence = c("desc", "asc"), targets = "_all")
+      )
+  )) 
 ```
 
