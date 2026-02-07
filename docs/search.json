@@ -1,29 +1,71 @@
 [
   {
-    "objectID": "players/julia.html#individual-results",
-    "href": "players/julia.html#individual-results",
-    "title": "Julia",
-    "section": "Individual Results",
-    "text": "Individual Results"
+    "objectID": "sessions.html",
+    "href": "sessions.html",
+    "title": "Sessions",
+    "section": "",
+    "text": "The sessions are sorted from new to old."
   },
   {
-    "objectID": "players/julia.html#progression-of-daily-averages",
-    "href": "players/julia.html#progression-of-daily-averages",
-    "title": "Julia",
+    "objectID": "sessions.html#section",
+    "href": "sessions.html#section",
+    "title": "Sessions",
+    "section": "27.02.2026",
+    "text": "27.02.2026"
+  },
+  {
+    "objectID": "sessions.html#section-1",
+    "href": "sessions.html#section-1",
+    "title": "Sessions",
+    "section": "24.01.2026",
+    "text": "24.01.2026"
+  },
+  {
+    "objectID": "sessions.html#section-2",
+    "href": "sessions.html#section-2",
+    "title": "Sessions",
+    "section": "19.12.2025",
+    "text": "19.12.2025"
+  },
+  {
+    "objectID": "players/nico.html",
+    "href": "players/nico.html",
+    "title": "Nico",
+    "section": "",
+    "text": "Warning: There were 2 warnings in `summarise()`.\nThe first warning was:\nℹ In argument: `Highest Score = max(score)`.\nCaused by warning in `max()`:\n! no non-missing arguments to max; returning -Inf\nℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning."
+  },
+  {
+    "objectID": "players/nico.html#stats-overview",
+    "href": "players/nico.html#stats-overview",
+    "title": "Nico",
+    "section": "",
+    "text": "Warning: There were 2 warnings in `summarise()`.\nThe first warning was:\nℹ In argument: `Highest Score = max(score)`.\nCaused by warning in `max()`:\n! no non-missing arguments to max; returning -Inf\nℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning."
+  },
+  {
+    "objectID": "players/nico.html#individual-results",
+    "href": "players/nico.html#individual-results",
+    "title": "Nico",
+    "section": "Individual Results",
+    "text": "Individual Results\n\n\nWarning: There were 2 warnings in `summarise()`.\nThe first warning was:\nℹ In argument: `ymin = min(score)`.\nCaused by warning in `min()`:\n! no non-missing arguments to min; returning Inf\nℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning."
+  },
+  {
+    "objectID": "players/nico.html#progression-of-daily-averages",
+    "href": "players/nico.html#progression-of-daily-averages",
+    "title": "Nico",
     "section": "Progression of Daily Averages",
     "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "players/daniel.html#individual-results",
-    "href": "players/daniel.html#individual-results",
-    "title": "Daniel",
+    "objectID": "players/flora.html#individual-results",
+    "href": "players/flora.html#individual-results",
+    "title": "Flora",
     "section": "Individual Results",
     "text": "Individual Results"
   },
   {
-    "objectID": "players/daniel.html#progression-of-daily-averages",
-    "href": "players/daniel.html#progression-of-daily-averages",
-    "title": "Daniel",
+    "objectID": "players/flora.html#progression-of-daily-averages",
+    "href": "players/flora.html#progression-of-daily-averages",
+    "title": "Flora",
     "section": "Progression of Daily Averages",
     "text": "Progression of Daily Averages"
   },
@@ -42,16 +84,30 @@
     "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "players/flora.html#individual-results",
-    "href": "players/flora.html#individual-results",
-    "title": "Flora",
+    "objectID": "players/daniel.html#individual-results",
+    "href": "players/daniel.html#individual-results",
+    "title": "Daniel",
     "section": "Individual Results",
     "text": "Individual Results"
   },
   {
-    "objectID": "players/flora.html#progression-of-daily-averages",
-    "href": "players/flora.html#progression-of-daily-averages",
-    "title": "Flora",
+    "objectID": "players/daniel.html#progression-of-daily-averages",
+    "href": "players/daniel.html#progression-of-daily-averages",
+    "title": "Daniel",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
+  },
+  {
+    "objectID": "players/julia.html#individual-results",
+    "href": "players/julia.html#individual-results",
+    "title": "Julia",
+    "section": "Individual Results",
+    "text": "Individual Results"
+  },
+  {
+    "objectID": "players/julia.html#progression-of-daily-averages",
+    "href": "players/julia.html#progression-of-daily-averages",
+    "title": "Julia",
     "section": "Progression of Daily Averages",
     "text": "Progression of Daily Averages"
   },

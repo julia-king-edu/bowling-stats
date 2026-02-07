@@ -1,5 +1,91 @@
 ---
-title: "sessions"
+title: "Sessions"
 format: html
 ---
+
+The sessions are sorted from new to old.
+
+```{r}
+#| include: false
+library(tidyverse)
+library(DT)
+library(stringr)
+library(knitr)
+
+# Load dataset
+scores <- read_csv(file.path("data", "scores.csv"))
+```
+
+```{r}
+#| include: false
+#| echo: false
+
+dates <- scores %>%
+  arrange(desc(date)) %>%
+  distinct(date) %>%
+  pull(date)
+```
+
+
+```{r}
+#| echo: false
+#| results: asis
+
+# it works, idk why, please dont touch
+
+tmp_files <- purrr::map2(
+  dates,
+  seq_along(dates),
+  ~ {
+    tmp <- tempfile(fileext = ".qmd")
+    formatted_date <- format(as.Date(.x), "%d.%m.%Y")
+    cat(
+      paste0(
+        "## ", formatted_date, "\n\n",
+        "```{r}\n",
+        "#| echo: false\n\n", 
+        "current_date = dates[", .y, "]\n\n",
+        "day_scores <- scores %>%\n",
+        "  filter(date == current_date) %>%\n",
+        "  group_by(player) %>%\n",
+        "  mutate(\n",
+        "    total_strikes = sum(strikes, na.rm = TRUE),\n",
+        "    avg_score = mean(score, na.rm = TRUE),\n",
+        "    sd_score = sd(score, na.rm = TRUE)\n",
+        "  ) %>%\n",
+        "  ungroup() %>%\n",
+        "  select(-c(strikes, drunk, date)) %>%\n",
+        "  pivot_wider(names_from = round, values_from = score, names_glue = 'Round {round}') %>%\n",
+        "  mutate(across(where(is.numeric), \\(x) round(x, 1))) %>%\n",
+        "  mutate(player = str_to_title(player)) %>%\n",
+        "  relocate(c(avg_score, sd_score, total_strikes), .after = last_col()) %>%\n",
+        "  arrange(desc(avg_score)) %>%\n",
+        "  rename(\n",
+        "    Player = player,\n",
+        "    Strikes = total_strikes,\n",
+        "    'Average Score' = avg_score,\n",
+        "    'Score Standard Deviation' = sd_score\n",
+        "  )\n\n",
+        "datatable(day_scores,\n",
+        "  options = list(\n",
+        "    dom = 't',\n",
+        "    paging = FALSE,\n",
+        "    searching = FALSE,\n",
+        "    info = FALSE,\n",
+        "    lengthChange = FALSE,\n",
+        "    columnDefs = list(list(orderSequence = c('desc','asc'), targets = '_all'))\n",
+        "  )\n",
+        ")\n",
+        "```\n"
+      ),
+      file = tmp
+    )
+    tmp
+  }
+)
+
+# include all child documents and **print the result** so Quarto executes the chunks
+purrr::walk(tmp_files, ~ cat(knitr::knit_child(.x, quiet = TRUE)))
+
+```
 

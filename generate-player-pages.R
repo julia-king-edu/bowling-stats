@@ -45,7 +45,9 @@ navbar_yaml <- c(
   "  navbar:",
   "    left:",
   "      - text: \"Leaderboard\"",
-  "        href: index.qmd"
+  "        href: index.qmd", 
+  "      - text: \"Sessions\"",
+  "        href: sessions.qmd"
 )
 
 # Add each player to the menu

@@ -29,3 +29,15 @@ date,round,player,score,strikes,drunk
 2026-01-24,3,anatolii,71,1,TRUE
 2026-01-24,3,julia,64,1,FALSE
 2026-01-24,3,daniel,75,0,TRUE
+2026-02-27,1,niko,81,0,TRUE
+2026-02-27,1,julia,63,0,FALSE
+2026-02-27,1,anatolii,71,0,TRUE
+2026-02-27,1,daniel,49,0,TRUE
+2026-02-27,2,niko,124,2,TRUE
+2026-02-27,2,julia,68,0,FALSE
+2026-02-27,2,anatolii,74,1,TRUE
+2026-02-27,2,daniel,82,0,TRUE
+2026-02-27,3,niko,82,0,TRUE
+2026-02-27,3,julia,70,0,FALSE
+2026-02-27,3,anatolii,81,1,TRUE
+2026-02-27,3,daniel,59,0,TRUE

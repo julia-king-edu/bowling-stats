@@ -13,6 +13,8 @@ website:
     left:
       - text: "Leaderboard"
         href: index.qmd
+      - text: "Sessions"
+        href: sessions.qmd
       - text: "Anatolii"
         href: players/anatolii.qmd
       - text: "Daniel"
