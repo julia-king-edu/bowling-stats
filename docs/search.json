@@ -10,19 +10,26 @@
     "objectID": "sessions.html#section",
     "href": "sessions.html#section",
     "title": "Sessions",
-    "section": "07.02.2026",
-    "text": "07.02.2026"
+    "section": "06.03.2026",
+    "text": "06.03.2026"
   },
   {
     "objectID": "sessions.html#section-1",
     "href": "sessions.html#section-1",
     "title": "Sessions",
-    "section": "24.01.2026",
-    "text": "24.01.2026"
+    "section": "07.02.2026",
+    "text": "07.02.2026"
   },
   {
     "objectID": "sessions.html#section-2",
     "href": "sessions.html#section-2",
+    "title": "Sessions",
+    "section": "24.01.2026",
+    "text": "24.01.2026"
+  },
+  {
+    "objectID": "sessions.html#section-3",
+    "href": "sessions.html#section-3",
     "title": "Sessions",
     "section": "19.12.2025",
     "text": "19.12.2025"
@@ -56,30 +63,16 @@
     "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "players/flora.html#individual-results",
-    "href": "players/flora.html#individual-results",
-    "title": "Flora",
+    "objectID": "players/julia.html#individual-results",
+    "href": "players/julia.html#individual-results",
+    "title": "Julia",
     "section": "Individual Results",
     "text": "Individual Results"
   },
   {
-    "objectID": "players/flora.html#progression-of-daily-averages",
-    "href": "players/flora.html#progression-of-daily-averages",
-    "title": "Flora",
-    "section": "Progression of Daily Averages",
-    "text": "Progression of Daily Averages"
-  },
-  {
-    "objectID": "players/anatolii.html#individual-results",
-    "href": "players/anatolii.html#individual-results",
-    "title": "Anatolii",
-    "section": "Individual Results",
-    "text": "Individual Results"
-  },
-  {
-    "objectID": "players/anatolii.html#progression-of-daily-averages",
-    "href": "players/anatolii.html#progression-of-daily-averages",
-    "title": "Anatolii",
+    "objectID": "players/julia.html#progression-of-daily-averages",
+    "href": "players/julia.html#progression-of-daily-averages",
+    "title": "Julia",
     "section": "Progression of Daily Averages",
     "text": "Progression of Daily Averages"
   },
@@ -98,16 +91,44 @@
     "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "players/julia.html#individual-results",
-    "href": "players/julia.html#individual-results",
-    "title": "Julia",
+    "objectID": "players/anatolii.html#individual-results",
+    "href": "players/anatolii.html#individual-results",
+    "title": "Anatolii",
     "section": "Individual Results",
     "text": "Individual Results"
   },
   {
-    "objectID": "players/julia.html#progression-of-daily-averages",
-    "href": "players/julia.html#progression-of-daily-averages",
-    "title": "Julia",
+    "objectID": "players/anatolii.html#progression-of-daily-averages",
+    "href": "players/anatolii.html#progression-of-daily-averages",
+    "title": "Anatolii",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
+  },
+  {
+    "objectID": "players/flora.html#individual-results",
+    "href": "players/flora.html#individual-results",
+    "title": "Flora",
+    "section": "Individual Results",
+    "text": "Individual Results"
+  },
+  {
+    "objectID": "players/flora.html#progression-of-daily-averages",
+    "href": "players/flora.html#progression-of-daily-averages",
+    "title": "Flora",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
+  },
+  {
+    "objectID": "players/maria.html#individual-results",
+    "href": "players/maria.html#individual-results",
+    "title": "Maria",
+    "section": "Individual Results",
+    "text": "Individual Results"
+  },
+  {
+    "objectID": "players/maria.html#progression-of-daily-averages",
+    "href": "players/maria.html#progression-of-daily-averages",
+    "title": "Maria",
     "section": "Progression of Daily Averages",
     "text": "Progression of Daily Averages"
   },

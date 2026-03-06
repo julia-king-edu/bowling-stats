@@ -41,3 +41,11 @@ date,round,player,score,strikes,drunk
 2026-02-07,3,julia,70,0,FALSE
 2026-02-07,3,anatolii,81,1,TRUE
 2026-02-07,3,daniel,59,0,TRUE
+2026-03-06,1,daniel,57,0,TRUE
+2026-03-06,1,julia,45,0,FALSE
+2026-03-06,1,flora,95,1,TRUE
+2026-03-06,1,maria,58,0,FALSE
+2026-03-06,2,daniel,50,1,TRUE
+2026-03-06,2,julia,64,0,FALSE
+2026-03-06,2,flora,77,1,TRUE
+2026-03-06,2,maria,38,0,FALSE

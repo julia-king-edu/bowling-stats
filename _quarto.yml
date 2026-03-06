@@ -23,5 +23,7 @@ website:
         href: players/flora.qmd
       - text: "Julia"
         href: players/julia.qmd
+      - text: "Maria"
+        href: players/maria.qmd
       - text: "Niko"
         href: players/niko.qmd

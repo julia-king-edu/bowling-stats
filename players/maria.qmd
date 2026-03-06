@@ -1,0 +1,116 @@
+---
+title: "Maria"
+format: html
+include-in-header: 
+  - text: |
+      <style>figure { padding: 3em 0 3em 0; }</style
+---
+
+```{r setup}
+#| include: false
+library(tidyverse)
+library(DT)
+
+# Load dataset
+scores <- read_csv(file.path("..", "data", "scores.csv"))
+player_name <- "maria"
+player_scores <- scores %>% filter(player == player_name) %>% arrange(date)
+```
+
+
+## Stats Overview
+
+```{r}
+#| echo: false
+
+player_scores %>%
+  summarise(
+    "Total Rounds Played" = n(),
+    "Highest Score" = max(score),
+    "Lowest Score" = min(score),
+    "Average Score" = mean(score),
+    "Score Standard Deviation" = sd(score),
+    "Strikes/ Game" = sum(strikes) / n()
+  ) %>%
+  mutate(across(where(is.numeric), \(x) round(x, 1))) %>%
+  datatable(
+    rownames = FALSE,
+    options = list(
+      dom = "t",
+      paging = FALSE,
+      searching = FALSE,
+      info = FALSE,
+      lengthChange = FALSE
+    )
+  )
+```
+
+## Individual Results
+
+```{r}
+#| echo: false
+
+daily_range <- player_scores %>%
+  group_by(date) %>%
+  summarise(
+    ymin = min(score),
+    ymax = max(score),
+    .groups = "drop"
+  )
+
+ggplot(player_scores, aes(x = date, y = score)) +
+  geom_point(color = "darkred", size = 2) +
+  geom_label(
+    aes(label = score),
+    position = position_dodge2(width = 3, padding = 2),
+    vjust = -0.25,
+    size = 3,
+    linewidth = 0.1,
+    fill = "white"
+  ) +
+  scale_x_date(breaks = daily_range$date, date_labels = "%Y-%m-%d") +
+  scale_y_continuous(limits = c(0, max(scores$score))) +
+  labs(
+    title = paste("Individual Results per Day for", str_to_title(player_name)),
+    x = "Date",
+    y = "Score"
+  ) +
+  theme_minimal()
+```
+
+
+## Progression of Daily Averages
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+daily_avg <- player_scores %>%
+  group_by(date) %>%
+  summarise(avg_score = mean(score), .groups = "drop") %>%
+  mutate(avg_score = round(avg_score))
+
+
+daily_avg %>%
+  ggplot(aes(x = date, y = avg_score, group = 1)) +
+  geom_line(color = "steelblue", linewidth = 1.2) +
+  geom_point(color = "darkred", linewidth = 3) +
+  geom_label(
+    aes(label = avg_score),
+    position = position_dodge2(width = 3, padding = 2),
+    vjust = -0.25,
+    size = 3,
+    linewidth = 0.1,
+    fill = "white"
+  ) +
+  scale_x_date(breaks = daily_avg$date, date_labels = "%Y-%m-%d") +
+  scale_y_continuous(limits = c(0, max(scores$score))) +
+  labs(
+    title = paste("Progression of Daily Averages for", str_to_title(player_name)),
+    x = "Date",
+    y = "Average Score"
+  ) +
+  theme_minimal()
+```
+
