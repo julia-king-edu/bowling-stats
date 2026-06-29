@@ -1,52 +1,59 @@
 [
   {
-    "objectID": "sessions.html",
-    "href": "sessions.html",
-    "title": "Sessions",
-    "section": "",
-    "text": "The sessions are sorted from new to old."
+    "objectID": "players/flora.html#individual-results",
+    "href": "players/flora.html#individual-results",
+    "title": "Flora",
+    "section": "Individual Results",
+    "text": "Individual Results"
   },
   {
-    "objectID": "sessions.html#section",
-    "href": "sessions.html#section",
-    "title": "Sessions",
-    "section": "26.04.2026",
-    "text": "26.04.2026"
+    "objectID": "players/flora.html#progression-of-daily-averages",
+    "href": "players/flora.html#progression-of-daily-averages",
+    "title": "Flora",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "sessions.html#section-1",
-    "href": "sessions.html#section-1",
-    "title": "Sessions",
-    "section": "27.03.2026",
-    "text": "27.03.2026"
+    "objectID": "players/anatolii.html#individual-results",
+    "href": "players/anatolii.html#individual-results",
+    "title": "Anatolii",
+    "section": "Individual Results",
+    "text": "Individual Results"
   },
   {
-    "objectID": "sessions.html#section-2",
-    "href": "sessions.html#section-2",
-    "title": "Sessions",
-    "section": "06.03.2026",
-    "text": "06.03.2026"
+    "objectID": "players/anatolii.html#progression-of-daily-averages",
+    "href": "players/anatolii.html#progression-of-daily-averages",
+    "title": "Anatolii",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "sessions.html#section-3",
-    "href": "sessions.html#section-3",
-    "title": "Sessions",
-    "section": "07.02.2026",
-    "text": "07.02.2026"
+    "objectID": "players/niko.html#individual-results",
+    "href": "players/niko.html#individual-results",
+    "title": "Niko",
+    "section": "Individual Results",
+    "text": "Individual Results"
   },
   {
-    "objectID": "sessions.html#section-4",
-    "href": "sessions.html#section-4",
-    "title": "Sessions",
-    "section": "24.01.2026",
-    "text": "24.01.2026"
+    "objectID": "players/niko.html#progression-of-daily-averages",
+    "href": "players/niko.html#progression-of-daily-averages",
+    "title": "Niko",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "sessions.html#section-5",
-    "href": "sessions.html#section-5",
-    "title": "Sessions",
-    "section": "19.12.2025",
-    "text": "19.12.2025"
+    "objectID": "players/maria.html#individual-results",
+    "href": "players/maria.html#individual-results",
+    "title": "Maria",
+    "section": "Individual Results",
+    "text": "Individual Results"
+  },
+  {
+    "objectID": "players/maria.html#progression-of-daily-averages",
+    "href": "players/maria.html#progression-of-daily-averages",
+    "title": "Maria",
+    "section": "Progression of Daily Averages",
+    "text": "Progression of Daily Averages"
   },
   {
     "objectID": "players/nico.html",
@@ -105,59 +112,59 @@
     "text": "Progression of Daily Averages"
   },
   {
-    "objectID": "players/anatolii.html#individual-results",
-    "href": "players/anatolii.html#individual-results",
-    "title": "Anatolii",
-    "section": "Individual Results",
-    "text": "Individual Results"
+    "objectID": "sessions.html",
+    "href": "sessions.html",
+    "title": "Sessions",
+    "section": "",
+    "text": "The sessions are sorted from new to old."
   },
   {
-    "objectID": "players/anatolii.html#progression-of-daily-averages",
-    "href": "players/anatolii.html#progression-of-daily-averages",
-    "title": "Anatolii",
-    "section": "Progression of Daily Averages",
-    "text": "Progression of Daily Averages"
+    "objectID": "sessions.html#section",
+    "href": "sessions.html#section",
+    "title": "Sessions",
+    "section": "26.06.2026",
+    "text": "26.06.2026"
   },
   {
-    "objectID": "players/flora.html#individual-results",
-    "href": "players/flora.html#individual-results",
-    "title": "Flora",
-    "section": "Individual Results",
-    "text": "Individual Results"
+    "objectID": "sessions.html#section-1",
+    "href": "sessions.html#section-1",
+    "title": "Sessions",
+    "section": "26.04.2026",
+    "text": "26.04.2026"
   },
   {
-    "objectID": "players/flora.html#progression-of-daily-averages",
-    "href": "players/flora.html#progression-of-daily-averages",
-    "title": "Flora",
-    "section": "Progression of Daily Averages",
-    "text": "Progression of Daily Averages"
+    "objectID": "sessions.html#section-2",
+    "href": "sessions.html#section-2",
+    "title": "Sessions",
+    "section": "27.03.2026",
+    "text": "27.03.2026"
   },
   {
-    "objectID": "players/maria.html#individual-results",
-    "href": "players/maria.html#individual-results",
-    "title": "Maria",
-    "section": "Individual Results",
-    "text": "Individual Results"
+    "objectID": "sessions.html#section-3",
+    "href": "sessions.html#section-3",
+    "title": "Sessions",
+    "section": "06.03.2026",
+    "text": "06.03.2026"
   },
   {
-    "objectID": "players/maria.html#progression-of-daily-averages",
-    "href": "players/maria.html#progression-of-daily-averages",
-    "title": "Maria",
-    "section": "Progression of Daily Averages",
-    "text": "Progression of Daily Averages"
+    "objectID": "sessions.html#section-4",
+    "href": "sessions.html#section-4",
+    "title": "Sessions",
+    "section": "07.02.2026",
+    "text": "07.02.2026"
   },
   {
-    "objectID": "players/niko.html#individual-results",
-    "href": "players/niko.html#individual-results",
-    "title": "Niko",
-    "section": "Individual Results",
-    "text": "Individual Results"
+    "objectID": "sessions.html#section-5",
+    "href": "sessions.html#section-5",
+    "title": "Sessions",
+    "section": "24.01.2026",
+    "text": "24.01.2026"
   },
   {
-    "objectID": "players/niko.html#progression-of-daily-averages",
-    "href": "players/niko.html#progression-of-daily-averages",
-    "title": "Niko",
-    "section": "Progression of Daily Averages",
-    "text": "Progression of Daily Averages"
+    "objectID": "sessions.html#section-6",
+    "href": "sessions.html#section-6",
+    "title": "Sessions",
+    "section": "19.12.2025",
+    "text": "19.12.2025"
   }
 ]

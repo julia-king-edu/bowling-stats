@@ -20,7 +20,7 @@ player_scores <- scores %>% filter(player == player_name) %>% arrange(date)
 
 ## Stats Overview
 
-```{r}
+```{r overview}
 #| echo: false
 
 player_scores %>%
@@ -47,7 +47,7 @@ player_scores %>%
 
 ## Individual Results
 
-```{r}
+```{r progression of individual results}
 #| echo: false
 
 daily_range <- player_scores %>%
@@ -82,7 +82,7 @@ ggplot(player_scores, aes(x = date, y = score)) +
 ## Progression of Daily Averages
 
 
-```{r}
+```{r progression of averages}
 #| echo: false
 #| warning: false
 
