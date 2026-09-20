@@ -68,7 +68,7 @@ ggplot(player_scores, aes(x = date, y = score)) +
     linewidth = 0.1,
     fill = "white"
   ) +
-  scale_x_date(breaks = daily_range$date, date_labels = "%Y-%m-%d") +
+  scale_x_date(breaks = daily_range$date, date_labels = "%Y-%m-%d", guide = guide_axis(angle = 30)) +
   scale_y_continuous(limits = c(0, max(scores$score))) +
   labs(
     title = paste("Individual Results per Day for", str_to_title(player_name)),
@@ -104,7 +104,7 @@ daily_avg %>%
     linewidth = 0.1,
     fill = "white"
   ) +
-  scale_x_date(breaks = daily_avg$date, date_labels = "%Y-%m-%d") +
+  scale_x_date(breaks = daily_avg$date, date_labels = "%Y-%m-%d", guide = guide_axis(angle = 30)) +
   scale_y_continuous(limits = c(0, max(scores$score))) +
   labs(
     title = paste("Progression of Daily Averages for", str_to_title(player_name)),
